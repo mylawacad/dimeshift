@@ -25,13 +25,25 @@ var startServer = function(options, callback) {
 		}
 		return true;
 	});
+	
+	/*
 	db.Sequelize.Promise.onPossiblyUnhandledRejection(function(reason) {
 		throw reason;
 	});
+	*/
 	server.use(CookieParser.parse);
 	server.use(restify.queryParser());
 	server.use(restify.bodyParser());
-
+	/*
+	server.use(
+	  function crossOrigin(req,res,next){
+		res.header("Access-Control-Allow-Origin", "*");
+		res.header("Access-Control-Allow-Headers", "X-Requested-With");
+		return next();
+	  }
+	);
+	*/
+	
 	// API routes
 	routes(function(routes) {
 		routes.forEach(function(route) {
