@@ -1,12 +1,12 @@
 {
   "development": {
-    "port": 8080,
+	"port":80,
     "database": {
       "dialect": "mysql",
-      "username": "root",
-      "password": "root",
-      "database": "walletjs",
-      "host": "127.0.0.1",
+      "username": "b27663ea0f4669",
+      "password": "2e24823c",
+      "database": "dimeshift",
+      "host": "eu-cdbr-azure-west-a.cloudapp.net",
       "storage": "data/database.sqlite"
     },
     "smtp": {
@@ -21,7 +21,7 @@
       "update_interval": 86400
     },
     "default_from_email": "noreply@dimeshift.com",
-    "site_path": "http://localhost:8080/",
+    "site_path": "http://bu.azurewebsites.net/",
     "minify": {
       "javascript": false,
       "css": false
