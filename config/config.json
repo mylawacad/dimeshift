@@ -1,6 +1,5 @@
 {
   "development": {
-	"port":80,
     "database": {
       "dialect": "mysql",
       "username": "b27663ea0f4669",
